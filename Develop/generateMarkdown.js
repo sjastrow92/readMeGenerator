@@ -49,43 +49,47 @@ This project is licensed under the ${license} license.
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseLink(data.license)}
-  ## Description
-  ${data.description}
-  ${data.title}
-  ${data.why}
-  ${data.problem}
-  ${data.learn}
-  ${data.install}
-  ${data.collaborators}
+${renderLicenseLink(data.license)}
+## Description
+${data.description}
+${data.title}
+${data.why}
+${data.problem}
+${data.learn}
+${data.install}
+${data.collaborators}
 
+## Table of Contents
+-&nbsp;[Installation](#installation)
 
-  ## Table of Contents
+-&nbsp;[Usage](#usage)
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Features](#features)
-  - [Credits](#credits)
-  - [Tests](#tests)
-  - [Questions](#questions)
+-&nbsp;[License](#license)
+
+-&nbsp;[Features](#features)
+
+-&nbsp;[Credits](#credits)
+
+-&nbsp;[Tests](#tests)
+
+-&nbsp;[Questions](#questions)
+
 ${renderLicenseLink(data.license)}
 
-  *[How to contribute](#how to contribute)
 
 
-  ## Installation
-  To install this application, please follow the steps below:
-  - ${data.install}
+## Installation
+To install this application, please follow the steps below:
+- ${data.install}
 ${renderLicenseSection(data.license)}
 
-  ## Usage
-  - ${data.why}
+## Usage
+- ${data.why}
+ 
+## Features
+- ${data.collaborators}
 
-  ## Features
-  - ${data.collaborators}
-
-  ## Tests
+## Tests
 - ${data.test}
 
 # Questions
